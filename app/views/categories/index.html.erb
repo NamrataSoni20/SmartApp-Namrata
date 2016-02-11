@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Categories</h1>
@@ -29,7 +29,5 @@
 <%= link_to 'New Category', new_category_path %>
 </p>
 
-<% else %>
-                   <%= render template: "home/index"%>
-<% end %>
+
 

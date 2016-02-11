@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'dashboard' => 'home#dashboard'
   get 'categories'  => 'categories#show'
   get 'products'  => 'products#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

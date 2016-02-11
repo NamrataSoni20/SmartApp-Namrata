@@ -16,7 +16,7 @@
             <% if user_signed_in? %>
            
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">HOME</a></li>
+                    <li><%= link_to "HOME", dashboard_path %></li>
                      <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></li>
                     <li><%= link_to "Dashboard", dashboard_path %></li>
                     <li><%=link_to "Edit Account Details", edit_user_registration_path %> </li>
@@ -27,7 +27,7 @@
                 </ul>
                 <% else %>
                    <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">HOME</a></li>
+                    <li><%= link_to "HOME", dashboard_path %></li>
                     <li><%= link_to "LOGIN", new_user_session_path %></li>
                     <li><%= link_to "REGISTRATION", new_user_registration_path %></li>
                     
