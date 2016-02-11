@@ -1,0 +1,64 @@
+
+
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="field">
+ <table align="center" class="table">
+   <caption ><h3>Add New Product</h3></caption><br><br>
+   
+   <tbody>
+
+     <tr>
+       <td><%= f.label :product_name %></td>
+       <td margin-top="50">
+       <%= f.text_field :product_name %><br><br>
+       </td>
+    </tr>
+    <tr>
+      <td>
+      <%= f.label :product_price %></td>
+      <td margin-top="50">
+      <%= f.text_field :product_price %><br><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <%= f.label :product_quantity %></td>
+      <td margin-top="50">
+      <%= f.number_field :product_quantity %><br><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <%= f.label :product_purchasedate %></td>
+      <td margin-top="50">
+      <%= f.datetime_select :product_purchasedate %><br><br>
+      </td>
+    </tr>
+     <tr>
+       <td><%= f.label :Category_id %>
+       </td>
+       <td margin-top="50">
+       <%= f.collection_select :Category_id, Category.all, :id, :category_name, :prompt => true  %>
+       </td>
+      </tr>
+  </tbody>
+ </table>
+  </div>
+ <div class="actions" style="margin-left:525px">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+    
+

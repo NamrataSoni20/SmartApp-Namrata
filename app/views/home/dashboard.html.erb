@@ -1,0 +1,147 @@
+ <% if user_signed_in? %>
+  <!--PORTFOLIO SECTION -->
+    <div id="porfolio-section" >
+        <div class="container" >
+            
+            <!-- ./ Main Heading-->
+             <div class="row  main-low-margin text-center">
+           <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 " >
+                    <div class="text-center">
+                        <ul class="portfolio-filter">
+                          
+                            <li><%= link_to "Categories",categories_path,{ :class=>"btn btn-primary margin-5" }  %></li>
+                            
+                            <li><%= link_to "Products", products_path,{ :class=>"btn btn-primary margin-5"} %></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./ Filter Head div-->
+                <div class="col-md-10 col-md-offset-1 col-sm-12" >
+                    <ul class="portfolio-items col-3">
+                        <li class="portfolio-item jquery">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t1.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b1.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                       
+                        <li class="portfolio-item  wordpress">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t2.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b2.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item  wordpress ">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t3.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b3.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item jquery html">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t4.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b4.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item wordpress html">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t5.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b5.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item jquery html">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t6.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b6.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item wordpress html">
+                           <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t7.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b7.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item jquery">
+                           <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t8.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b8.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                         <li class="portfolio-item jquery">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t9.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-primary" title="Image Title Here" href="assets/img/portfolio/big/b9.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                 </div>
+        </div>
+    </div>
+    <!-- END PORTFOLIO SECTION -->
+   
+   
+ 
+    <!--FOOTER SECTION -->
+    
+    <!--END FOOTER SECTION --> 
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+            <!--ISOTOPE SCRIPTS-FOR FILTERING (REQUIRED FOR PORFOLIO)-->
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <!--PRETTYPHOTO SCRIPTS (REQUIRED FOR PORFOLIO)-->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+     <!-- CUSTOM SCRIPT-->
+    <script src="assets/js/custom.js"></script>
+
+  <% else %>
+                   <%= render template: "home/index"%>
+<% end %>
